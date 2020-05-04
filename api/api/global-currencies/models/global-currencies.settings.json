@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "global_currencies",
+  "info": {
+    "name": "global_currencies"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "symbol": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string"
+    },
+    "rate": {
+      "type": "string"
+    },
+    "decimals": {
+      "type": "string"
+    },
+    "symbol_placement": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "status": {
+      "type": "boolean"
+    }
+  }
+}

@@ -46,41 +46,6 @@
     "domain": {
       "type": "string"
     },
-    "multi_language": {
-      "type": "enumeration",
-      "enum": [
-        "yes",
-        "no"
-      ]
-    },
-    "multi_currency": {
-      "type": "enumeration",
-      "enum": [
-        "yes",
-        "no"
-      ]
-    },
-    "auto_currency_update": {
-      "type": "enumeration",
-      "enum": [
-        "yes",
-        "no"
-      ]
-    },
-    "auto_geo_location_detection": {
-      "type": "enumeration",
-      "enum": [
-        "yes",
-        "no"
-      ]
-    },
-    "site_offline": {
-      "type": "enumeration",
-      "enum": [
-        "yes",
-        "no"
-      ]
-    },
     "site_offline_msg": {
       "type": "text"
     },
@@ -90,26 +55,31 @@
     "mobile_app_android_link": {
       "type": "string"
     },
-    "registered_users_access": {
-      "type": "enumeration",
-      "enum": [
-        "yes",
-        "no"
-      ]
+    "multi_language": {
+      "type": "boolean",
+      "default": true
     },
-    "registred_users_book": {
-      "type": "enumeration",
-      "enum": [
-        "yes",
-        "no"
-      ]
+    "multi_currency": {
+      "type": "boolean",
+      "default": true
     },
-    "users_account_approve": {
-      "type": "enumeration",
-      "enum": [
-        "auto",
-        "manual"
-      ]
+    "auto_users_account_approve": {
+      "type": "boolean",
+      "default": true
+    },
+    "auto_users_geo_detect": {
+      "type": "boolean",
+      "default": true
+    },
+    "only_registered_users_book": {
+      "type": "boolean",
+      "default": true
+    },
+    "default_language": {
+      "model": "global-languages"
+    },
+    "default_currency": {
+      "model": "global-currencies"
     }
   }
 }
