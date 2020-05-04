@@ -1,0 +1,115 @@
+{
+  "kind": "collectionType",
+  "collectionName": "global_settings",
+  "info": {
+    "name": "global_settings"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "business_name": {
+      "type": "string"
+    },
+    "business_slogan": {
+      "type": "string"
+    },
+    "business_logo": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "business_favicon": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "business_number": {
+      "type": "biginteger"
+    },
+    "business_email": {
+      "type": "email"
+    },
+    "domain": {
+      "type": "string"
+    },
+    "multi_language": {
+      "type": "enumeration",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "multi_currency": {
+      "type": "enumeration",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "auto_currency_update": {
+      "type": "enumeration",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "auto_geo_location_detection": {
+      "type": "enumeration",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "site_offline": {
+      "type": "enumeration",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "site_offline_msg": {
+      "type": "text"
+    },
+    "mobile_app_ios_link": {
+      "type": "string"
+    },
+    "mobile_app_android_link": {
+      "type": "string"
+    },
+    "registered_users_access": {
+      "type": "enumeration",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "registred_users_book": {
+      "type": "enumeration",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "users_account_approve": {
+      "type": "enumeration",
+      "enum": [
+        "auto",
+        "manual"
+      ]
+    }
+  }
+}
