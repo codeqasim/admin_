@@ -33,7 +33,7 @@ $config['base_url'] = $root;
                             </g>
                         </svg>
                         <!-- <img src="<?=$root;?>assets/img/logo.png" alt="..."> -->
-                        <span class="hidden-folded d-inline l-s-n-1x ">Administrator</span>
+                        <span class="hidden-folded d-inline l-s-n-1x ">Admin</span>
                     </a>
                     <!-- / brand -->
                 </div>
@@ -51,32 +51,32 @@ $config['base_url'] = $root;
                                 </a>
                             </li>
                             <li class="nav-header hidden-folded">
-                                <span class="text-muted">Applications</span>
+                                <span class="text-muted">Main</span>
                             </li>
                             <li>
-                                <a href="app.calendar.html">
+                                <a href="<?=$root;?>settings">
                                 <span class="nav-icon text-info"><i data-feather='calendar'></i></span>
-                                <span class="nav-text">Calendar</span>
+                                <span class="nav-text">Settings</span>
                                 <span class="nav-badge"><b class="badge-circle xs text-danger"></b></span>
                                 </a>
                             </li>
                             <li>
-                                <a href="app.user.html">
+                                <a href="<?=$root;?>accounts">
                                 <span class="nav-icon text-success"><i data-feather='users'></i></span>
-                                <span class="nav-text">Users</span>
+                                <span class="nav-text">Accounts</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="app.message.html">
-                                <span class="nav-icon text-warning"><i data-feather='message-circle'></i></span>
-                                <span class="nav-text">Messages</span>
+                                <a href="<?=$root;?>bookings">
+                                <span class="nav-icon text-warning"><i data-feather='calendar'></i></span>
+                                <span class="nav-text">Bookings</span>
                                 <span class="nav-badge"><b class="badge-circle xs text-warning"></b></span>
                                 </a>
                             </li>
                             <li>
-                                <a href="app.mail.html">
+                                <a href="<?=$root;?>modules">
                                 <span class="nav-icon text-danger"><i data-feather='mail'></i></span>
-                                <span class="nav-text">Email</span>
+                                <span class="nav-text">Modules</span>
                                 </a>
                             </li>
                         </ul>

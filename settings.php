@@ -21,7 +21,7 @@
             <div class="padding">
                 <div id="accordion">
                     <p class="text-muted">
-                        <strong>Account</strong>
+                        <strong>Main Settings</strong>
                     </p>
                     <div class="card">
                         <div class="d-flex align-items-center px-4 py-3 pointer" data-toggle="collapse" data-parent="#accordion" data-target="#c_1">
@@ -31,33 +31,71 @@
                                 </span>
                             </div>
                             <div class="mx-3 d-none d-md-block">
-                                <strong>Jacqueline Reid</strong>
-                                <div class="text-sm text-muted">jacqueline@company.co</div>
+                                <strong>Business Name</strong>
+                                <div class="text-sm text-muted">Slogan</div>
                             </div>
                             <div class="flex"></div>
                             <div class="mx-3">
                                 <i data-feather="chevron-right"></i>
                             </div>
                             <div>
-                                <a href="signin.html" class="text-prmary text-sm">Sign Out</a>
+                                <a href="#" class="text-prmary text-sm">Sign Out</a>
                             </div>
                         </div>
                         <div class="collapse p-4" id="c_1">
                             <form role="form">
                                 <div class="form-group">
-                                    <label>Profile picture</label>
+                                    <label>Business Logo .PNG</label>
                                     <div class="custom-file">
-                                        <input type="file" class="custom-file-input" id="customFile">
+                                        <input type="file" class="custom-file-input" id="customFile" name="business_logo">
                                         <label class="custom-file-label" for="customFile">Choose file</label>
                                     </div>
                                 </div>
+
                                 <div class="form-group">
-                                    <label>First Name</label>
-                                    <input type="text" class="form-control">
+                                    <label>Business Favicon .PNG</label>
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="customFile" name="business_favicon">
+                                        <label class="custom-file-label" for="customFile">Choose file</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Business Name</label>
+                                    <input type="text" class="form-control" name="business_name">
                                 </div>
                                 <div class="form-group">
-                                    <label>Last Name</label>
-                                    <input type="text" class="form-control">
+                                    <label>Business Slogan</label>
+                                    <input type="text" class="form-control" name="business_slogan">
+                                </div>
+                                <button type="submit" class="btn btn-primary mt-2">Update</button>
+                            </form>
+                        </div>
+                        <div class="d-flex align-items-center px-4 py-3 b-t pointer" data-toggle="collapse" data-parent="#accordion" data-target="#c_4">
+                            <i data-feather="map-pin"></i>
+                            <div class="px-3">
+                                <div>Business Information</div>
+                            </div>
+                            <div class="flex"></div>
+                            <div>
+                                <i data-feather="chevron-right"></i>
+                            </div>
+                        </div>
+                        <div class="collapse p-4" id="c_4">
+                            <form role="form">
+                                <div class="form-group">
+                                    <label>Business Phone Numbers</label>
+                                    <input type="number" class="form-control" placeholder="Phone 1" name="business_phone1">
+                                    <input type="number" class="form-control" placeholder="Phone 2" name="business_phone2">
+                                    <input type="number" class="form-control" placeholder="Phone 3" name="business_phone3">
+                                </div>
+                                <div class="form-group">
+                                    <label>Business Email</label>
+                                    <input type="text" class="form-control" placeholder="Email Address" name="business_email">
+                                </div>
+                                <div class="form-group">
+                                    <label>Business Address</label>
+                                    <input type="text" class="form-control" placeholder="Business location" name="business_address">
                                 </div>
                                 <button type="submit" class="btn btn-primary mt-2">Update</button>
                             </form>
@@ -65,8 +103,8 @@
                         <div class="d-flex align-items-center px-4 py-3 b-t">
                             <i data-feather="refresh-cw"></i>
                             <div class="px-3">
-                                <div>Sync</div>
-                                <div class="text-sm text-muted">On - Sync everything</div>
+                                <div>Site Offline</div>
+                                <div class="text-sm text-muted">Enable only if site offline</div>
                             </div>
                             <div class="flex"></div>
                             <span>
@@ -79,7 +117,7 @@
                         <div class="d-flex align-items-center px-4 py-3 b-t pointer" data-toggle="collapse" data-parent="#accordion" data-target="#c_2">
                             <i data-feather="lock"></i>
                             <div class="px-3">
-                                <div>Password</div>
+                                <div>License Access Keys</div>
                             </div>
                             <div class="flex"></div>
                             <div>
@@ -89,16 +127,12 @@
                         <div class="collapse p-4" id="c_2">
                             <form role="form">
                                 <div class="form-group">
-                                    <label>Old Password</label>
-                                    <input type="password" class="form-control">
+                                    <label>OTA Access Key</label>
+                                    <input type="text" class="form-control" value="FD633243443MF">
                                 </div>
                                 <div class="form-group">
-                                    <label>New Password</label>
-                                    <input type="password" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label>New Password Again</label>
-                                    <input type="password" class="form-control">
+                                    <label>OTA Secret Key</label>
+                                    <input type="text" class="form-control" value="234MFD63324F">
                                 </div>
                                 <button type="submit" class="btn btn-primary mt-2">Update</button>
                             </form>
@@ -122,51 +156,40 @@
                                 <button type="submit" class="btn btn-primary mt-2">Update</button>
                             </form>
                         </div>
-                        <div class="d-flex align-items-center px-4 py-3 b-t pointer" data-toggle="collapse" data-parent="#accordion" data-target="#c_4">
-                            <i data-feather="map-pin"></i>
-                            <div class="px-3">
-                                <div>Addresses and more</div>
-                            </div>
-                            <div class="flex"></div>
-                            <div>
-                                <i data-feather="chevron-right"></i>
-                            </div>
-                        </div>
-                        <div class="collapse p-4" id="c_4">
-                            <form role="form">
-                                <div class="form-group">
-                                    <label>URL</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label>Company</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label>Location</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                <button type="submit" class="btn btn-primary mt-2">Update</button>
-                            </form>
-                        </div>
                     </div>
                     <p class="text-muted">
                         <strong>Notifications</strong>
                     </p>
                     <div class="card">
                         <div class="d-flex align-items-center px-4 py-3">
-                            <div>Anyone seeing my profile page</div>
+                            <div>New account signup</div>
                             <div class="flex"></div>
-                            <span>
+
+                            Push Notification&nbsp;&nbsp;
+                            <span style="margin-right:15px">
                             <label class="ui-switch ui-switch-md">
-                            <input type="checkbox">
+                            <input type="checkbox" checked>
                             <i></i>
                             </label>
                             </span>
-                        </div>
-                        <div class="d-flex align-items-center px-4 py-3 b-t">
-                            <div>Anyone follow me</div>
-                            <div class="flex"></div>
+
+                            Email&nbsp;&nbsp;
+                            <span style="margin-right:15px">
+                            <label class="ui-switch ui-switch-md">
+                            <input type="checkbox" checked>
+                            <i></i>
+                            </label>
+                            </span>
+
+                            Whatsapp&nbsp;&nbsp;
+                            <span style="margin-right:15px">
+                            <label class="ui-switch ui-switch-md">
+                            <input type="checkbox" checked>
+                            <i></i>
+                            </label>
+                            </span>
+
+                            SMS&nbsp;&nbsp;
                             <span>
                             <label class="ui-switch ui-switch-md">
                             <input type="checkbox" checked>
@@ -174,9 +197,36 @@
                             </label>
                             </span>
                         </div>
-                        <div class="d-flex align-items-center px-4 py-3 b-t">
-                            <div>Anyone send me a message</div>
+
+                        <div class="d-flex align-items-center px-4 py-3">
+                            <div>New Booking Generated</div>
                             <div class="flex"></div>
+
+                            Push Notification&nbsp;&nbsp;
+                            <span style="margin-right:15px">
+                            <label class="ui-switch ui-switch-md">
+                            <input type="checkbox" checked>
+                            <i></i>
+                            </label>
+                            </span>
+
+                            Email&nbsp;&nbsp;
+                            <span style="margin-right:15px">
+                            <label class="ui-switch ui-switch-md">
+                            <input type="checkbox" checked>
+                            <i></i>
+                            </label>
+                            </span>
+
+                            Whatsapp&nbsp;&nbsp;
+                            <span style="margin-right:15px">
+                            <label class="ui-switch ui-switch-md">
+                            <input type="checkbox" checked>
+                            <i></i>
+                            </label>
+                            </span>
+
+                            SMS&nbsp;&nbsp;
                             <span>
                             <label class="ui-switch ui-switch-md">
                             <input type="checkbox" checked>
@@ -184,19 +234,36 @@
                             </label>
                             </span>
                         </div>
-                        <div class="d-flex align-items-center px-4 py-3 b-t">
-                            <div>Anyone invite me to group</div>
+
+                        <div class="d-flex align-items-center px-4 py-3">
+                            <div>Booking Cancelled</div>
                             <div class="flex"></div>
-                            <span>
+
+                            Push Notification&nbsp;&nbsp;
+                            <span style="margin-right:15px">
                             <label class="ui-switch ui-switch-md">
-                            <input type="checkbox">
+                            <input type="checkbox" checked>
                             <i></i>
                             </label>
                             </span>
-                        </div>
-                        <div class="d-flex align-items-center px-4 py-3 b-t">
-                            <div>Update</div>
-                            <div class="flex"></div>
+
+                            Email&nbsp;&nbsp;
+                            <span style="margin-right:15px">
+                            <label class="ui-switch ui-switch-md">
+                            <input type="checkbox" checked>
+                            <i></i>
+                            </label>
+                            </span>
+
+                            Whatsapp&nbsp;&nbsp;
+                            <span style="margin-right:15px">
+                            <label class="ui-switch ui-switch-md">
+                            <input type="checkbox" checked>
+                            <i></i>
+                            </label>
+                            </span>
+
+                            SMS&nbsp;&nbsp;
                             <span>
                             <label class="ui-switch ui-switch-md">
                             <input type="checkbox" checked>
@@ -204,9 +271,10 @@
                             </label>
                             </span>
                         </div>
+
                     </div>
                     <p class="text-muted">
-                        <strong>Emails</strong>
+                        <strong>Email Configuration</strong>
                     </p>
                     <div class="card">
                         <div class="d-flex align-items-center px-4 py-3">
