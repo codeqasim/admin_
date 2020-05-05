@@ -1,3 +1,6 @@
+<style>
+.collapse{background:#eceff3}
+</style>
 <!-- ############ Content START-->
 <div id="content" class="flex ">
     <!-- ############ Main START-->
@@ -150,12 +153,120 @@
                         <div class="collapse p-4" id="c_3">
                             <form role="form">
                                 <div class="form-group">
-                                    <label>Paypal account</label>
-                                    <input type="input" class="form-control">
+                                 <select class="form-control">
+                                    <option>Payment Gateways</option>
+                                    <option>Paypal</option>
+                                    <option>Stripe</option>
+                                    <option>Authorize</option>
+                                    <option>EasyPaisa</option>
+                                    <option>Paddle</option>
+                                </select>
                                 </div>
+                                <div class="row">
+                                <div class="form-group col"><label>Credential val 1</label><input type="input" class="form-control"></div>
+                                <div class="form-group col"><label>Credential val 2</label><input type="input" class="form-control"></div>
+                                <div class="form-group col"><label>Credential val 3</label><input type="input" class="form-control"></div>
+                                <div class="form-group col"><label>Credential val 4</label><input type="input" class="form-control"></div>
+                                </div>
+                                <select class="form-control">
+                                    <option>Production</option>
+                                    <option>Development</option>
+                                </select>
                                 <button type="submit" class="btn btn-primary mt-2">Update</button>
                             </form>
                         </div>
+
+                        <div class="d-flex align-items-center px-4 py-3 b-t pointer" data-toggle="collapse" data-parent="#accordion" data-target="#language">
+                            <i data-feather="globe"></i>
+                            <div class="px-3">
+                                <div>Language</div>
+                            </div>
+                            <div class="flex"></div>
+                            <div class="mx-3">
+                                <i data-feather="chevron-right"></i>
+                            </div>
+                            <div>
+                                <a href="<?=$root;?>languages" class="text-prmary text-sm">Languages</a>
+                            </div>
+                        </div>
+                        <div class="collapse p-4" id="language">
+                            <form role="form">
+                                <div class="row">
+                                <div class="form-group col">
+                                <label>Auto GEO location detection</label>
+                                 <select class="form-control">
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                                </div>
+
+                                <div class="form-group col">
+                                <label>Multi-language</label>
+                                 <select class="form-control">
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                                </div>
+
+                                <div class="form-group col">
+                                <label>Default language</label>
+                                 <select class="form-control">
+                                    <option>English</option>
+                                    <option>Arabic</option>
+                                </select>
+                                </div>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary mt-2">Update</button>
+                            </form>
+                        </div>
+
+
+                        <div class="d-flex align-items-center px-4 py-3 b-t pointer" data-toggle="collapse" data-parent="#accordion" data-target="#currency">
+                            <i data-feather="dollar-sign"></i>
+                            <div class="px-3">
+                                <div>Currency</div>
+                            </div>
+                            <div class="flex"></div>
+                            <div class="mx-3">
+                                <i data-feather="chevron-right"></i>
+                            </div>
+                            <div>
+                                <a href="<?=$root;?>currencies" class="text-prmary text-sm">Currencies</a>
+                            </div>
+                        </div>
+                        <div class="collapse p-4" id="currency">
+                            <form role="form">
+                                <div class="row">
+                                <div class="form-group col">
+                                <label>Auto GEO currency detection</label>
+                                 <select class="form-control">
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                                </div>
+
+                                <div class="form-group col">
+                                <label>Multi-currency</label>
+                                 <select class="form-control">
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                                </div>
+
+                                <div class="form-group col">
+                                <label>Default currency</label>
+                                 <select class="form-control">
+                                    <option>USD</option>
+                                    <option>PKR</option>
+                                </select>
+                                </div>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary mt-2">Update</button>
+                            </form>
+                        </div>
+
                     </div>
                     <p class="text-muted">
                         <strong>Notifications</strong>

@@ -9,7 +9,7 @@ $config['base_url'] = $root;
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Admin</title>
+        <title><?=$filename;?></title>
         <meta name="description" content="Responsive, Bootstrap, BS4" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <!-- style -->
@@ -55,7 +55,7 @@ $config['base_url'] = $root;
                             </li>
                             <li>
                                 <a href="<?=$root;?>settings">
-                                <span class="nav-icon text-info"><i data-feather='calendar'></i></span>
+                                <span class="nav-icon text-info"><i data-feather='settings'></i></span>
                                 <span class="nav-text">Settings</span>
                                 <span class="nav-badge"><b class="badge-circle xs text-danger"></b></span>
                                 </a>
@@ -75,7 +75,7 @@ $config['base_url'] = $root;
                             </li>
                             <li>
                                 <a href="<?=$root;?>modules">
-                                <span class="nav-icon text-danger"><i data-feather='mail'></i></span>
+                                <span class="nav-icon text-danger"><i data-feather='sliders'></i></span>
                                 <span class="nav-text">Modules</span>
                                 </a>
                             </li>
